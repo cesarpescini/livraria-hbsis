@@ -1,0 +1,26 @@
+<table class="table table-hover table-striped table-sm">
+  <thead>
+    <tr>
+      <th>Código</th>
+      <th>Nome</th>
+      <th>Editora</th>
+      <th>Escritor(a)</th>
+      <th>Preço</th>
+      <th>Em estoque</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let livro of livros">
+      <td>{{livro.codigoLiv}}</td>
+      <td>{{livro.nomeLiv}}</td>
+      <td>{{livro.editorLiv}}</td>
+      <td>{{livro.escritLiv}}</td>
+      <td>{{livro.precoLiv}}</td>
+      <td>{{livro.qtdestLiv}}</td>
+      <td>
+        <a [routerLink]="['/livro/edit', livro.codigoLiv]">Editar</a> | <a [routerLink]="['/livro/delete', livro.codigoLiv]">Deletar</a>
+      </td>
+    </tr>
+  </tbody>
+</table>

@@ -1,0 +1,12 @@
+/* You can add global styles to this file, and also import other style files */
+body{
+    padding : 15px;
+}
+
+.border-none{
+    border : none !important;
+}
+
+.hidden{
+    display : none !important;
+}

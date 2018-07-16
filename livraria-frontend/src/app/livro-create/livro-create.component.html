@@ -1,0 +1,47 @@
+<form #form="ngForm">
+  <div class="form-group" >
+    <label for="txtNomeLiv">Nome</label>
+    <input type="text" class="form-control" id="txtNomeLiv" name="txtNomeLiv" minlength="4"  [(ngModel)]="livro.nomeLiv" required #name="ngModel">
+    <div *ngIf="name.invalid && (name.dirty || name.touched)" class="alert alert-danger">
+        <div *ngIf="name.errors.required">
+            Nome do livro é obrigatório.
+        </div>
+        <div *ngIf="name.errors.minlength">
+            O Nome do livro precisa ter ao menos 4 caracteres.
+        </div>
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="txtEscritor">Escritor</label>
+    <input type="text" class="form-control" id="txtEscritor" name="txtEscritor" [(ngModel)]="livro.escritLiv" required #escritor="ngModel">
+    <div *ngIf="escritor.invalid && (escritor.dirty || escritor.touched)" class="alert alert-danger">
+        <div *ngIf="escritor.errors.required">
+            Nome do escritor é obrigatório.
+        </div>
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="txtEditora">Editora</label>
+    <input type="text" class="form-control" id="txtEditora" name="txtEditora" [(ngModel)]="livro.editorLiv" required #editora="ngModel">
+    <div *ngIf="editora.invalid && (editora.dirty || editora.touched)" class="alert alert-danger">
+        <div *ngIf="editora.errors.required">
+            Nome da editora é obrigatório.
+        </div>
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="txtPreco">Preço</label>
+    <input type="number" class="form-control" id="txtPreco" name="txtPreco" min="0" [(ngModel)]="livro.precoLiv">
+    <div></div>
+  </div>
+  <div class="form-group">
+    <label for="txtQtdPaginas">Quantidade de páginas</label>
+    <input type="number" class="form-control" id="txtQtdPaginas" name="txtQtdPaginas" min="0" [(ngModel)]="livro.qtdpagLiv">
+  </div>
+  <div class="form-group">
+    <label for="txtQtdEstoque">Quantidade em estoque</label>
+    <input type="number" class="form-control" id="txtQtdEstoque" name="txtQtdEstoque" min="0" [(ngModel)]="livro.qtdestLiv">
+  </div>
+  <button type="submit" [class.hidden]="editando" class="btn btn-primary" [disabled]="form.invalid" (click)="inserir()">Salvar</button>
+  <button type="submit" [class.hidden]="!editando" class="btn btn-primary" [disabled]="form.invalid" (click)="salvar()">Salvar</button>
+</form>

@@ -1,0 +1,7 @@
+C:\Users\J-c-p\source\repos\Livraria\Livraria.Util.ConnectionCreator\bin\Debug\Livraria.Util.ConnectionCreator.exe.config
+C:\Users\J-c-p\source\repos\Livraria\Livraria.Util.ConnectionCreator\bin\Debug\Livraria.Util.ConnectionCreator.exe
+C:\Users\J-c-p\source\repos\Livraria\Livraria.Util.ConnectionCreator\bin\Debug\Livraria.Util.ConnectionCreator.pdb
+C:\Users\J-c-p\source\repos\Livraria\Livraria.Util.ConnectionCreator\obj\Debug\Livraria.Util.ConnectionCreator.csproj.CoreCompileInputs.cache
+C:\Users\J-c-p\source\repos\Livraria\Livraria.Util.ConnectionCreator\obj\Debug\Livraria.Util.ConnectionCreator.exe
+C:\Users\J-c-p\source\repos\Livraria\Livraria.Util.ConnectionCreator\obj\Debug\Livraria.Util.ConnectionCreator.pdb
+C:\Users\J-c-p\source\repos\Livraria\Livraria.Util.ConnectionCreator\obj\Debug\Livraria.Util.ConnectionCreator.csprojAssemblyReference.cache

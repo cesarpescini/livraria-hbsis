@@ -1,0 +1,16 @@
+Create database livraria;
+
+Use livraria;
+
+CREATE TABLE livro 
+  ( 
+     codigo_liv INT NOT NULL auto_increment, 
+     nome_liv VARCHAR(200) NOT NULL, 
+     escrit_liv VARCHAR(200) NULL, 
+     editor_liv VARCHAR(200) NULL, 
+     preco_liv DECIMAL(15, 2) NULL, 
+     qtdpag_liv INT NULL, 
+     qtdest_liv INT NOT NULL DEFAULT 0,
+     PRIMARY KEY (codigo_liv) 
+  ) 
+comment = 'Livros'; 
